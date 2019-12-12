@@ -7,8 +7,8 @@ const Moon = new Schema(
   {
     name: { type: String, required: true },
     kmWidth: { type: Number, required: true },
-    starId: { type: ObjectId, ref: 'star', required: true },
-    planetId: { type: ObjectId, ref: 'planet', required: true }
+    starId: { type: ObjectId, ref: 'Star', required: true },
+    planetId: { type: ObjectId, ref: 'Planet', required: true }
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );

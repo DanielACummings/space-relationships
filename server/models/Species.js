@@ -9,7 +9,7 @@ const Species = new Schema(
     class: { type: String, required: true },
     kgWeight: { type: Number, required: true },
     meterLength: { type: Number, required: true },
-    planetId: { type: ObjectId, ref: 'planet', required: true }
+    planetId: { type: ObjectId, ref: 'Planet', required: true }
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );

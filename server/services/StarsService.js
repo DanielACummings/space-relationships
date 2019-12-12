@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import Star from "../models/Star";
 import ApiError from '../utils/ApiError'
 
-const _repository = mongoose.model("star", Star);
+const _repository = mongoose.model("Star", Star);
 
 class StarsService {
   async getAll() {

@@ -7,7 +7,7 @@ const Star = new Schema(
   {
     name: { type: String, required: true },
     kmWidth: { type: Number, required: true },
-    galaxyId: { type: ObjectId, ref: 'galaxy', required: true }
+    galaxyId: { type: ObjectId, ref: 'Galaxy', required: true }
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );

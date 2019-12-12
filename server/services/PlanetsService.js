@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import Planet from "../models/Planet";
 import ApiError from '../utils/ApiError'
 
-const _repository = mongoose.model("planet", Planet);
+const _repository = mongoose.model("Planet", Planet);
 
 class PlanetsService {
   async getAll() {

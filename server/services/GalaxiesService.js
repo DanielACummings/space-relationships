@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import Galaxy from "../models/Galaxy";
 import ApiError from '../utils/ApiError'
 
-const _repository = mongoose.model("galaxy", Galaxy);
+const _repository = mongoose.model("Galaxy", Galaxy);
 
 class GalaxiesService {
   async getAll() {

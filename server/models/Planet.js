@@ -7,7 +7,7 @@ const Planet = new Schema(
   {
     name: { type: String, required: true },
     kmWidth: { type: Number, required: true },
-    starId: { type: ObjectId, ref: 'star', required: true }
+    starId: { type: ObjectId, ref: 'Star', required: true }
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
